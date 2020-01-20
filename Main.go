@@ -24,9 +24,6 @@ func Walk(t *tree.Tree, ch chan int) {
 
 // Same determines whether the trees
 // t1 and t2 contain the same values.
-// Same(tree.New(1),tree.New(1)) should return true
-// Same(tree.New(1),tree.New(2)) should return false
-// Possibly use a switch statement
 func Same(t1, t2 *tree.Tree) bool {
 	ch1 := make(chan int)
 	ch2 := make(chan int)
